@@ -50,7 +50,7 @@ export default {
           this.menu.itemComponent,
           { class: this.classes },
           [
-            createElement('nuxt-link', { props: { to: entity.attributes.url } }, entity.attributes.title)
+            createElement('nuxt-link', { props: { to: '/' + entity.attributes.link.uri.substr(7) } }, entity.attributes.title)
           ]
         ),
 
